@@ -357,9 +357,6 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
 
 - When you are first implementing an Agile methodology, it is critical to follow a proven Agile project management process. In other words, it is important to stick to the rules and not to experiment with hybrid frameworks mid-sprint. Particularly while your team is learning the ropes. 
 
-## Aigle tools:
-
-- Trello board.
 
 ## Swarming 
 
@@ -367,20 +364,122 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
 
 ## Scrum
 
-- The term Scrum refers to a frameword used in agile project management that uses fixed-length iterations of work; referred to as sprints. There are four ceremonies which structure each sprint. 
+- The term Scrum refers to a frameword used in agile project management that uses fixed-length iterations of work; referred to as sprints. Although scrums are generally used by software development teams, the scrum framework can be beneficial to any team working towards a common goal.
 
- 1. It begins with a backlog or body of work that has a deadline that needs to be met. 
-    - There are two kind of backlogs in a scrum. The first is the product backlog which is owned by the product owner. The second is a sprint backlog which takes issues from the top of the product backlog. This continues until the capacity for the next sprint is reached.
 
- Scrum teams have unique roles specific to their stake in the process. Typically there's a scrum master, or champion of the scrum method for the team; the product owner, who's the voice of the product; and the scrum team, who are often cross-functional team members in charge of getting s@#$ done."
+## Scrum roles: 
 
-https://www.atlassian.com/agile/project-management
+- There are two sets of roles in Agile scrum methodology.
+
+    1. Core roles - referred to as "pigs"
+
+    2. Ancillary roles - referred to as "chickens".
+
+
+- The core roles can be broken down into three core roles:
+
+    1. **Scrum master:**
+
+        - Facilitaes the scrum development process.
+
+        - Supervises and manages that the scrum rules are being enforced and applied as intended.
+
+        - Responsibile for motivating and coaching the team.
+
+        - Responsibile for helping the team meet their target.
+
+
+    2. **Product owner:**
+
+        - Represents stakeholders (typically customers).
+
+        - Determins product expectations.
+
+        - Records any changes to the product. 
+
+        - Responsibile for administering a scrum backlog. 
+
+        - Responsible for keeping a detailed and updated to-do list for the scrum project.
+
+    3. **Scrum team:**
+
+        - Members of a scrum team are collectively responsible for meeting each sprint's goals.
+
+        - A scrum team has the skills required to produce deliverable products.
+
+
+
 
 ## The scrum board
 
-"A scrum board is used to visualize all the work in a given sprint. During the sprint planning meeting, the team moves items from the product backlog into the sprint backlog. Scrum boards can have multiple steps visible in the workflow, like To Do, In Progress, and Done. Scrum boards are the key component for increasing transparency in agile project management."
+- Used to visualize all the work in a given sprint.
 
-https://www.atlassian.com/agile/project-management
+- They are a key component for illustrating transparency within agile project management.
+
+
+## Aigle tools:
+
+### Trello board
+
+- Trello is a simple tool to begin implementing Agile methodologies.
+
+- Trello works like a traditional whiteboard but inclues the freedom and luxuries associated with digital and web technologies; it is free, simple to use and share with others. 
+
+- Trello givess users and guests full visibility into project stages, roles, and deadlines.
+
+- Trello can be used as a Scrum board or an Agile-based sprint board.
+
+- In order to create an Agile-based sprint board, you will need:
+
+    - Sprint backlog: 
+    
+        - Contains all the tasks that need to be completed within the current project.
+
+    - Current sprint
+
+        - Dedicated to the tasks you aim to accomplish.
+
+    - To do
+
+        - Contains actionable steps that are required in the current sprint.
+
+    - In progress
+
+        - Contains the tasks that are in progress and not finished.
+
+    - Q & A
+
+        - This is where tasks are place after a team member completes it. Then it can be reviewed by other team members before being adding to the done area. 
+
+    - Done
+
+        - Contains tasks that are completed.
+
+
+- There are other ways of incorporating Agile based methodologies with trello but the above is just one example. 
+
+- The image below illustrates an example/template of using a trello board as a *Scrum Project Management Board.*
+
+
+![Alt](trello.png)
+
+- Link to this template can be found [here:](https://trello.com/b/0xzkRjTH/scrum-project-management-board)
+
+
+## Tips for excelling at Agile with Trello
+
+1. Move the **Done list** to the far left side of the board
+
+
+2. Minimise the amount of tasks in the **todo list**
+
+3. Include an extra list for tasks in **pending status**
+
+
+
+
+
+
 
 
 
@@ -1142,6 +1241,14 @@ Returns a relation containing all tuples (records) that meet some condition. In 
 # References:
 
 https://www.proserveit.com/blog/information-security-requirements#eleven
+https://www.atlassian.com/git/tutorials/using-branches
+https://blog.hubstaff.com/agile-trello/
+
+https://www.businessnewsdaily.com/4987-what-is-agile-scrum-methodology.html
+
+
+https://www.atlassian.com/agile/project-management
+
 
 
 
