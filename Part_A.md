@@ -763,15 +763,39 @@ https://looker.com/definitions/data-security
 
 # Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project 
 
-- Link to the document can be viewd [here](https://toolkit.data.gov.au/files/Rights,_responsibilities_and_roles_of_data_users_Dec2013.pdf).
+In order to outline the legal obligations of handling user data and there relationship to ACME Corporation, I have sourced an Australian Government document titled *Rights, responsibilities and roles of data users*. The document clearly outlines appropriate definitions and as suggested by the title, the legal obligations and responsibilities of data users. I consider the overview of the document below to be of practical use for ACME Corporation. 
+
+
+- Link to the full document can be viewed [here](https://toolkit.data.gov.au/files/Rights,_responsibilities_and_roles_of_data_users_Dec2013.pdf).
+
+- Additionally, I have sourced *The Privacy Act 1988* 
+which can be viewed [here]()
 
 ### Data Users:
 
-- "A data user refers to a person involved in accessing and investigating integrated datasets for statistical and research purposes"
+- The term data user refers to a person involved in accessing and investigating integrated datasets. Specifically for statistical and research purposes. This includes academics who work in research institutions and employees undertaking research in Commonwealth and state/territory agencies. The term data user in plural may also refer to multiple data users working as part of a consortium, alliance or collaborative network. 
 
-- "Data users have a number of ‘rights and responsibilities’ associated with accessing and using integrated datasets that involve the use of at least one Commonwealth dataset. These exist within the governance and institutional framework designed to minimise risks around the management of data, once data is received by the integrating authority and after it has been integrated."
+- Given ACME Corporation aims to be competitive and relevant, it is encouraged ACME Corporation should embrace the benefits of big data. In this manner, it is fair to suggest ACME Corporation will be involved in accessing and possibly investigating integrated datasets.
 
-- "Has the right to consult with data custodians and the integrating authority on any material changes or updates to a data integration project (regardless of whether changes originate from data custodians or integrating authorities). This will occur before data users start examining integrated datasets. The consultation is likely to include issues raised by integrating authorities such as the technical feasibility of the project or the limitations of data use."
+- Therefore, it is recommended ACME Corporation seriously consider the following outline. 
+
+
+### Rights and Responsibilities 
+
+- There are a number of rights and responsibilities associated with accessing and using integrated datasets which ACME Corporation should familiarise themselves with. These rights and responsibilities relate to integrated datasets that involve the use of at least one Commonwealth dataset. Additionally, these rights and responsibilities 
+exist within the governance and institutional framework which is designed to help minimise risks associated with managing data.
+
+
+- ACME will be required to consult with data custodians and the integrating authority if they are to make any material changes or updates to a data integration project. This will be required 
+regardless of whether any such changes originate from data custodians or integrating authorities. Additionally, the consultative process will be led by a data custodian(s) who are required to approve theACME project before proceeding to an integrating authority. 
+
+
+- According to the sourced document - *Rights, responsibilities and roles of data users*, this consultation is to be done before data users start examining integrated datasets; aiming to raise issues of integrating authorities (technical feasibility of ACME Corporation) or any limitations of the data use. 
+
+
+
+ 
+
 
 - "are entitled to receive appropriate training covering high level statistical integration principles, governance and institutional arrangements, data protocols (e.g., ethical approval processes in the case of human-based health research), legislative frameworks and security requirements. This training will be facilitated by integrating authorities. Course material will also be determined by integrating authorities, with possible input, advice and assistance provided by data custodians. Data users can also expect to access a range of self-help tools to enhance their understanding of the Commonwealth arrangements."
 
@@ -1208,31 +1232,31 @@ Returns a relation containing all tuples (records) that meet some condition. In 
 
 # Q12: Conduct research into a marketplace website (app) and answer the following parts: 
 
-## Ebay
+## Airbnb
 
 ## A: List and describe the software used by the app.
 
-- "Adobe (Dreamweaver, Flash, Illustrator, Photoshop), Akka, Apache (Cassandra, Solr), Apigee, Atlassian JIRA, Bootstrap, CloudAMQP, Cloudinary, CollabNet TeamForge, Couchbase, CreateJS, DataStax, DbVisualizer, Delphix, Devart, Elastic Kibana, Elasticsearch, Fabric, GitHub, Git Tower, Google (Cloud Messaging, Maps), GupShup, InfluxData, and many others."
+- 
 
 ## B: Describe the hardware used to host the app.
 
-- "Web Servers, Application Servers, Search Servers, Data Servers and eBay has local partners in many countries who deliver eBay's static data to cut down on download time, and there are monitoring systems in 45 cities around the world that constantly scan for problems in the network."
+
 
 ## C: Describe the interaction of technologies within the app
 
-- "The architecture is a type of grid computing that allows for both error correction and growth. With the exception of the search function, everything about eBay can actually run on approximately 50 servers -- Web servers, application servers and data-storage systems. Each server has between six and 12 microprocessors. These 50 or so servers run separately, but they talk to each other, so everybody knows if there is a problem somewhere. EBay can simply add servers to the grid as the need arises."
+
 
 ## D: Describe the way data is structured within the app
 
-- "Structured data in ebay serves a dual purpose: it helps both humans looking at the listing to understand the offering better and it allows the site’s search engines to group similar items together. Usually structured data will come in a “key”/“value” format, where the “key” defines what the data that is contained in the “value” field is and the “value” is the corresponding information."
+
 
 ## E: Identify entities which must be tracked by the app
 
-- "User (Username,Email,Address), Product (Product Name, Description, Price, Image, Discount), Order, Order Details, Shopping Cart(Quantity, Date Added), Shipping Info(Shipping Type, Shipping Cost, Shipping Region)"
+
 
 ## F: Identify the relationships and associations between the entities you have identified in part (e)
 
-- "User has many Order Details, Order Details has one User, Order has many Order Details, Order Detail has one Order, Order has one Shipping Info, Shipping Info has one Order, Order has one Shopping Cart, Shopping Cart has one Order, AddtoCart has many Shopping Cart, Product has many AddtoCart, AddtoCart has one Shopping Cart and AddtoCart has one Product."
+
 
 
 ## ERD 
@@ -1248,6 +1272,14 @@ https://www.businessnewsdaily.com/4987-what-is-agile-scrum-methodology.html
 
 
 https://www.atlassian.com/agile/project-management
+
+https://stackshare.io/airbnb/airbnb
+
+https://medium.com/@poojaseenu1999/the-technology-stack-behind-airbnb-6b23fe425612
+
+
+
+
 
 
 
