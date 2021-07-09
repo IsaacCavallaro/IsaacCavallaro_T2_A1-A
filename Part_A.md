@@ -1387,6 +1387,10 @@ It is important to illustrate that Airbnb's architecture has differed throughout
     - Presto
     - Druid
 
+This relationship with Amazon is clearly illustrated with Nathan Blecharczyk, Co-founder & CTO of Airbnb claims stating,
+
+“Initially, the appeal of AWS was the ease of managing and customizing the stack. It was great to be able to ramp up more servers without having to contact anyone and without having minimum usage commitments. As our company continued to grow, so did our reliance on the AWS cloud and now, we’ve adopted almost all of the features AWS provides. AWS is the easy answer for any Internet business that wants to scale to the next level.”
+
 ## Amazon RDS cloud database
 
 - Amazon Relational Database Service (Amazon RDS) helps Airbnb operate and scale a relational database in the cloud. This frees Airbnb team members to focus on the applications and the business needs.
@@ -1444,6 +1448,11 @@ It is important to illustrate that Airbnb's architecture has differed throughout
 
 
 ## D: Describe the way data is structured within the app
+
+
+
+![Alt](airbnbdatatier.png)
+
 
 
 
