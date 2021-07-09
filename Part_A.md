@@ -1441,6 +1441,14 @@ This relationship with Amazon is clearly illustrated with Nathan Blecharczyk, Co
 
 ## B: Describe the hardware used to host the app.
 
+Given Airbnb operates primarily with Amazon Web Services (AWS), they have been able to sidestep a lot of the difficulties that come with managing and servicing datacenters. Therefore, investigating the hardware used to host Airbnb will require looking at the hardware of AWS. As mentioned above, Airbnb uses the Amazon EC2 to create virtual machines which manage storage, security, ports and remove the need for physical servers. The Amazon EC2 is powered by Intel® Xeon, Scalable processors which claim to have the largest breath, global reach and availability of computer instances across AWS geographies. Additionally the Amazon EC2 is the only cloud with 400Gps ethernet networking. While it is not clear exactly what version of the Intel Xeon Scalable processor Airbnb are using, considering they have a fourteen plus year relationship with Intel, it is safe to assume Airbnb will be looking to include the latest Third-Generation Intel Xeon Scalable Processor with up to 40 powerful cores and built-in workload acceleration features that include:
+
+- Intel Deep Learning Boost
+- Intel Advanced Vector Extensions 512
+- Intel Speed Select Technology
+
+
+
 
 
 ## C: Describe the interaction of technologies within the app
