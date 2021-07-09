@@ -551,7 +551,7 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
 
 - Branching refers to an independent line of development. 
 
-- They server as an abstraction for the edit/stage/commit process. 
+- They serve as an abstraction for the edit/stage/commit process. 
 
 - In other words, branching can be viewd as a way to request a brand new:
     -  working directory
@@ -560,7 +560,7 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
 
     - project history
 
-- In this way, new commits are recorded in the histroy of the current branch. 
+- In this way, new commits are recorded in the history of the current branch. 
 
 - This will result in a fork in the history of the project.
 
@@ -601,7 +601,7 @@ In modern versions of Git, you can then checkout the remote branch like a local 
 
 # Q5: Provide an overview and description of a standard software testing process
 
-The primary goal of testing is to make sure our program is functional.
+The primary goal of **testing** is to make sure our program is **functional.**
 
 - Functional
 
@@ -655,101 +655,124 @@ ADD RSPEC CODE!
 
 - *Having suffered several cyber attacks in the past and resultant remedial audits ACME Corporation takes compliance, security and privacy very seriously. The following set of questions relate to this RfQ-requirement.*
 
+Information systems security (INFOSEC) refers to the approaches and processes involved with maintaining informations confidentiality, availability and assuring its integrity. INFOSEC is often summed up by the CIA triad which refers to:
 
-- In the modern digital world, companies are recieving security threats on a constant basis. Therefore, it is critical for organizations to understand security requirements. Understanding the information security requirments is considered "the all-important first step to developing a robust information security strategy" (ProServeIT, 2020). 
+- **Confidentiality**
 
-https://www.proserveit.com/blog/information-security-requirements
+    - Data is considered confidential when only the people who are authorized to access the data can do so. In this manner, ensuring confidentiality will require ACME Corporation to indentify and block attempts of  unauthorised access. In order for ACME Corperation to maintain confidentiality, it is suggested they take advantage of modern encryption and authentication whilst ensuring they have secure passwords throughout the organisations data.
 
+- **Integrity**
 
-There are 3 types of security obligations organizations need to consider when dealing with information security requirements.
+    - Data integrity refers to maintaining the state of data and preventing it from being improperly modified. This includes both accidental modification and changes made by malicious entities. Data integrity also refers to the notion of non-repudiation. Therefore, ACME Corporation will need to set up systems that can prove they have maintained the integrity of the data they collect. This will help ACME Corporation be prepared for any legal events involving data. Additonally, the techniques ACME uses to ensure confidentiality will also help protect data integrity. In addition to these, it is advised that ACME Corporation takes advantage of modern version control which will help restore any data to a correct state if required. 
 
-## 1. Business Obligations
+- **Availability**
 
-"Business Obligations: These are the security commitments you have. For example, you have a responsibility to ensure that information in the business – customer data, employee files, etc. – is kept secure and is available when needed."
-
-## 2. Regulatory Obligations: 
-
-"These are legal, compliance, or contractual obligations that your security team must fulfil. For example, organizations in the healthcare industry must be HIPAA compliant."
-
-## 3. Customer Obligations: 
-
-"These are the security commitments that the customer expects your organization to keep. For example, if you were a manufacturing company that provided custom parts, those customers may require all of their proprietary blueprint files to be encrypted."
+    - Data availability can be described as the mirror image of confidentiality. Herein lies a challenge ACME Corporation will need to consider and be prepared for. Specifically, ACME Corporation will need to ensure that the data they collect can be accessed by the entities who have the correct permissions. This needs to be achieved whilst ensuring the data can not be accessed by unauthorised entities. Therefore it is recommended that ACME Corporation consider their network and computing resources and be sure to match them with the volume of data access they expect will be required for their secruity systems.  
 
 
+## Security obligations:
 
+
+In the modern digital world, companies are recieving security threats on a constant basis. Therefore, it is critical for organisations to understand security requirements. Understanding the information security requirments is considered "the all-important first step to developing a robust information security strategy" (ProServeIT, 2020). In this manner, I suggest ACME Corporation to put time aside to fully understand the types of attacks they need to be prepared for. Furthermore, it is important for ACME Corporation to understand their obligations in order to be confident they are well positioned and up to date with the necessary requirements. 
+
+There are 3 types of security obligations organisations need to consider when dealing with information security requirements. Therefore I consider the following to be relevant to the future of ACME Corporation. 
+
+## Overview:
+
+### 1. Business Obligations
+
+- These refer to the security commitments ACME Corporation will need to commit to. In short, it is the responsibility of ACME  Corporationto ensure that all the information is kept secure and is available all at times. This includes customer data, employee files etc.
+
+### 2. Regulatory Obligations: 
+
+- These refer to the legal obligations ACME Corporation will need to adhere to includind compliance and contractual obligations. 
+
+
+### 3. Customer Obligations: 
+
+
+- These refer to the security commitments that ACME Corporation will be need to commit to relative to their customers expectations.
+
+## Business Obligations for ACME Corporation
+
+The COVID-19 pandemic and its effects on businesses illustrates the largest obligation ACME Corporation will need to commit to. Specifically, ACME Corporation will need to have their information security requirements take business continuity into account when dealing with information security requirements. It is also important for ACME Corporation to maintain their end-user security by training their team with the aim to limit the end users’ exploitability whilst identifying and managing the information security risks. Therefore ACME will need to define and prioritise the risks related to systems and data.
+
+Further Obligations ACME Corporation will need to implement are the commitment to securing sensitive or critical information from unauthorized access and disclosure. While this may seem obvious, this leads to additional expectations; namely, proper access control, encryption, and threat management. Strategies for adhering to these obligations must innovative processes; allowing ACME to enable new technologies when appropriate. 
 
 ## Types of attacks:
 
+One way to ensure ACME Corporation is prepared and implementating secure systems is for the organisation and its team members to be educated with the most common attacks. 
+
 ### Phishing
 
-- "This attack collects sensitive information like login credentials and credit card information by sending an email supposedly from a legitimate business that has a link to a legitimate-looking (but totally fraudulent) website. This is one of the most prevalent types of attack that a small business will face. (Source: Ponemon Institute)."
-
-https://www.proserveit.com/blog/information-security-best-practices
+- Phishing refers to the an attack which collects sensitive information. This is achieved by sending emails which are to be from a legitimate business but in reality are a scam. Often, the inforatiom that is collected is related to credit card details or login credentials. 
 
 
 ### Ransomware
 
-- "One of the fastest growing types of security breaches, ransomware is a type of malware that will infect the target’s machine and either lock the victim out of their machine, encrypt the victim’s files, or threaten to publish the victim’s confidential information if a ransom is not paid. Remember WannaCry? That was a ransomware attack."
+- Ransomware refers to a type of malicious software that infects the target's machine. This can be achieved by locking the user out of their mcahine, encrypting the users files or by threatening to publish confidential information. 
 
-https://www.proserveit.com/blog/information-security-best-practices
 
 ### Inside attacks
 
-- "These attacks happen when someone with administrative privileges purposely misuses his or her credentials and hacks into your confidential company information."
-
-https://www.proserveit.com/blog/information-security-best-practices
+- Inside attacks refers to an attack where an entity with administrative privileges intentionally hacks into confidential company information
 
 
 ### Malware
 
-- "Short for “malicious software”, this attack covers any program that is introduced into the target’s computer with the intent to either gain unauthorized access or cause damage."
+- Malware is short for “malicious software” and refers to any kind of attack which is intentionally introduced to the targets computer in order to gain unauthorised access or to cause damage to the system. 
 
-https://www.proserveit.com/blog/information-security-best-practices
 
 ### Password attacks
 
-- "Brute-force attacks (keep guessing at a password until they get in), dictionary attacks (use a program to try combinations of dictionary words), or keylogging attacks (track the target’s keystrokes) are three types of password attacks".
+- This refers to an attack which gains access to a users password either through keylogging (tracking the target's keystrokes) or using a program to try different combinations of characters to find the password. 
 
-https://www.proserveit.com/blog/information-security-best-practices
 
 
 # Q7: Discuss common methods of protecting information and data and how you would apply the to the project
 
-https://looker.com/definitions/data-security
+The data that ACME Corporation creates, collects, stores, and exchanges is considered a valuable asset. Therefore, it is critical to safeguard the data from corruption and unauthorized access. I suggest the team at ACME Corporation to review The General Data Protection Regulation (GDPR) which covers:
+
+- What GDPR is and its Penalties
+
+-  Data Privacy Best Practices
+
+- GDPR Checklist & Requirements
+
+- How GDPR’s Requirements Affect Your Business
+
+By understanding this document and the importance of data security, ACME Corporation will be prepared to make a plan to help protect their data. While there are many technologies to help ensure data protection, below are some key areas which ACME Corporation should take into consideration.
+
+
+For more information on the GDPR click [here](https://looker.com/learn/gdpr-whitepaper).
+
 
 ## Authentication 
 
-"Authentication, along with authorization, is one of the recommended ways to boost data security and protect against data breaches. Authentication technology verifies if a user’s credentials match those stored in your database. Today’s standard authentication processes include using a combination of ways to identify an authorized user, such as passwords, PINS, security tokens, a swipe card, or biometrics."
+- Authentication technologies verify if a user’s credentials match the credentials stored in a database. Modern authentication processes often include a combination of ways to help indentify a user. These include passwords, PINS and security tokens.
 
-"Authentication is made easier through single sign-on technology, which, with one security token, allows an authenticated user access to multiple systems, platforms, and applications. Authorization technology determines what an authenticated user are allowed to do or see on your website or server."
+- To make authentication simpler and more effective, it is advised ACME Corporation use a single sign-on technology with only one security token. With this single sign-on, user of ACME Corporation's product can access to additional system, platforms and applications. 
 
-https://looker.com/definitions/data-security
 
 ## Access control
 
-"Authentication and authorization happen through the process called access control. Access control systems can include:"
+- Access control can facilitate authentication and authorisatiom through various methods. These include discretionary access control which will allow access to ACME Corporations resources based on the identity of users or groups. Anther method used to implement access control is refered to as role-based; assigning the access based on the role of the user relative to ACME  Corporation. Lastly, there is the mandatory access control which refers to the system administrator who has access to all the information. 
 
-"Discretionary access control (the least restrictive), which allows access to resources based on the identity of users or groups,
-Role-based access control, which assigns access based on organizational role and allows users access only to specific information,
-And mandatory access control, which allows a system administrator to strictly control access to all information."
 
-https://looker.com/definitions/data-security
 
 ## Backups & recovery
 
-"Prioritizing data security also requires a plan for how to access your company’s and client’s data in the event of system failure, disaster, data corruption, or breach. Doing regular data backups is an important activity to help with that access."
+- In order for ACME  Corporation to be prepared for a system failure, breach or data corruption, it is highly recommended they do regular data backups. Specifically, ACME should be making copies of their data and storing it on seperate systems or in the could. In this way, the restoring of lost data can be easily accessed. 
 
-"A data backup entails making a copy of your data and storing it on a separate system or medium such as a tape, disk, or in the cloud. You can then recover lost data by using your backup."
 
 ## Encryption
 
-"Data encryption software effectively enhances data security by using an algorithm (called a cipher) and an encryption key to turn normal text into encrypted ciphertext. To an unauthorized person, the cipher data will be unreadable."
+- In addition to the above data security suggestions, it is highly recommended that ACME Corporation include data encryption in their plan to protect data. This will prevent unauthorised entities from entering systems by using an algorithm called a cipher; turning text into encrypted ciphertext. This means the data can only be decrypted by a user with an authorised key. Importantly, the storing of these encrypted keys needs to be managed wisely. Therefore, it is advised that ACME Corporation should include an off-site encryption backup with restricted access. 
 
-"That data can then be decrypted only by a user with an authorized key. Encryption is used to protect the data that you store (called data at rest) and data exchanged between databases, mobile devices, and the cloud (called data in transit). Your encryption keys must be securely managed, including protecting your critical management systems, managing a secure, off-site encryption backup, and restricting access."
 
 ## Data masking
 
-"Data masking software hides data by obscuring letters and numbers with proxy characters. The data is still there, behind the masking. The software changes the data back to its original form only when an authorized user receives that data.
+- Data masking refers to software that hides data with obsure letters, numbers and proxy characters. In this manner, the data can only be accessed by an authorised user. When such an authorised user gains access, the data will be restored to its original state.
 
 ## Tokenization
 
@@ -761,15 +784,21 @@ https://looker.com/definitions/data-security
 
 
 
+
 # Q8: Research what your legal obligations are in relation to handling user data and how they can be met for the project 
 
-In order to outline the legal obligations of handling user data and there relationship to ACME Corporation, I have sourced an Australian Government document titled *Rights, responsibilities and roles of data users*. The document clearly outlines appropriate definitions and as suggested by the title, the legal obligations and responsibilities of data users. I consider the overview of the document below to be of practical use for ACME Corporation. 
+In order to outline the legal obligations of handling user data and its relationship to the ACME Corporation, I have sourced an Australian Government document titled *Rights, responsibilities and roles of data users*. The document clearly outlines appropriate definitions and as suggested by the title, the legal obligations and responsibilities of data users. I consider the overview of the document below to be of practical use for ACME Corporation. 
 
 
-- Link to the full document can be viewed [here](https://toolkit.data.gov.au/files/Rights,_responsibilities_and_roles_of_data_users_Dec2013.pdf).
+- Link to *Rights, responsibilities and roles of data users* can be viewed [here](https://toolkit.data.gov.au/files/Rights,_responsibilities_and_roles_of_data_users_Dec2013.pdf).
 
-- Additionally, I have sourced *The Privacy Act 1988* 
-which can be viewed [here]()
+Additionally, I have sourced *The Privacy Act 1988* which
+was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations handle personal information. The document outlines the organisations and agencies the Privacy Act covers and those it doesn’t.
+
+
+- The document can be viewed [here]().
+
+Lastly, a quick reference to the Australian Privacy Principles which also includes the relevant information for applying the principles. This source can be found [here](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference/).
 
 ### Data Users:
 
@@ -787,30 +816,108 @@ exist within the governance and institutional framework which is designed to hel
 
 
 - ACME will be required to consult with data custodians and the integrating authority if they are to make any material changes or updates to a data integration project. This will be required 
-regardless of whether any such changes originate from data custodians or integrating authorities. Additionally, the consultative process will be led by a data custodian(s) who are required to approve theACME project before proceeding to an integrating authority. 
+regardless of whether any such changes originate from data custodians or integrating authorities. Additionally, the consultative process will be led by a data custodian(s) who are required to approve the ACME project before proceeding to an integrating authority. 
 
 
 - According to the sourced document - *Rights, responsibilities and roles of data users*, this consultation is to be done before data users start examining integrated datasets; aiming to raise issues of integrating authorities (technical feasibility of ACME Corporation) or any limitations of the data use. 
 
+- Importantly, ACME  Corporation are entitled to receive appropriate training covering which will cover high level statistical integration principles, governance and institutional arrangements, data protocols,legislative frameworks and security requirements. Such training is to be facilitated by integrating authorities. The integrating authorities will allow ACME Corporation to have access a range of self-help tools to enhance their understanding of the Commonwealth arrangements.
 
+- Another key take-away within *Rights, responsibilities and roles of data users* illustrates that I consider relevant to the project is that ACME Corporation must be aware of and understand the sanctions which apply for attempts to identify individuals or organisation. This includes re-identifying individuals or organisations. Therefore it is important that ACME Corporation be informed of what is considered misuse of data. 
 
- 
-
-
-- "are entitled to receive appropriate training covering high level statistical integration principles, governance and institutional arrangements, data protocols (e.g., ethical approval processes in the case of human-based health research), legislative frameworks and security requirements. This training will be facilitated by integrating authorities. Course material will also be determined by integrating authorities, with possible input, advice and assistance provided by data custodians. Data users can also expect to access a range of self-help tools to enhance their understanding of the Commonwealth arrangements."
-
-- "must be aware of, and understand, sanctions which apply for attempts to identify (or re-identify) individuals or organisations; disseminating outputs that enable the identification of individuals or organisations; or the misuse of data."
-
-- "has the right to be informed by data custodians of the project status (i.e. approval or disapproval). Data custodians have the right to approve or disapprove a project proposal, in whole or in part. This decision could take into consideration the technical feasibility assessment made by integrating authorities. Data custodians may also need to prioritise and schedule data extraction work associated with project proposals, taking into account the range of data extraction requests that may be outstanding at the time."
-
-- "have a responsibility to pay cost recovery payments to data custodians, where applicable."
-
-- "are responsible for ensuring that datasets are used for the approved purposes only. This is facilitated by practices which help avoid the misinterpretation of data. Examples include the testing of assumptions made in respect of the data by researchers and the supply of appropriate metadata by data custodians."
+- In a case where a data breach is made and ACME is responsible, the company will have to  pay cost recovery payments to data custodians, where applicable.
 
 
 
+
+- The image below illustrates The Commonwealth’s data integration arrangements by outlining how data users fit within the arrangements, and their interactions
+with data custodians and integrating authorities.
 
 ![Alt](dataintegration.png)
+
+## The Australian Privacy Principle
+
+- The Australian Privacy Principles apply to any organisation or agency the Privacy Act covers. The Privacy Act defines an ‘organisation’ as:
+
+    - an individual, including a sole trader (though generally, the Privacy Act doesn’t apply to an individual acting in a personal capacity)
+
+    - a body corporate
+
+    - a partnership
+
+    - any other unincorporated association, or
+a trust
+
+Given ACME is a corporation, it will fall under the Privacy Act as an organisation.
+
+
+
+- According to *The Privacy Act 1988* 
+‘Personal information’ is defined as any ‘information or an opinion about an identified individual, or an individual who is reasonably identifiable
+
+    - whether the information or opinion is true or not; and
+
+    - whether the information or opinion is recorded in a material form or not’ (s 6(1))
+
+- This clarifying of definitions are crucial for ACME  Corporation to be informed of their responsibilties. Further clarification can be found at https://www.oaic.gov.au/
+
+
+- The Australian Privacy Principles consist of 13 APPS which refer to a clearly expressed and up to date policy about the management of personal information by the entity/APP.
+
+- Below is a list of the 13 principles. A full breakdown of each principle can be found [here](https://www.oaic.gov.au/privacy/australian-privacy-principles/read-the-australian-privacy-principles/).
+
+## 13 Principles
+
+#### **NOTE: This text comes from the above link and is not to be considered original. Rather, it servers as a quick illustration to help ACME Corporation identify what they need to take into consideration when dealing with personal data.**
+
+###  1. Open and transparent management of personal information
+
+- The object of this principle is to ensure that APP entities manage personal information in an open and transparent way.
+
+### 2. Anonymity and pseudonymity
+
+- Individuals must have the option of not identifying themselves, or of using a pseudonym, when dealing with an APP entity in relation to a particular matter.
+
+### 3. Collection of personal information
+
+- If an APP entity is an agency, the entity must not collect personal information (other than sensitive information) unless the information is reasonably necessary for, or directly related to, one or more of the entity’s functions or activities.
+
+### 4. Dealing with unsolicited personal information
+
+- If an APP entity receives personal information; and
+the entity did not solicit the information;
+the entity must, within a reasonable period after receiving the information, determine whether or not the entity could have collected the information under Australian Privacy Principle 3 if the entity had solicited the information.
+
+### 5. Notification of the collection of personal information
+
+- At or before the time or, if that is not practicable, as soon as practicable after, an APP entity collects personal information about an individual, the entity must take such steps (if any) as are reasonable in the circumstances:
+
+    a) to notify the individual of such matters referred to in subclause 5.2 as are reasonable in the circumstances; or
+
+    b) to otherwise ensure that the individual is aware of any such matters.
+
+### 6. Use or disclosure of personal information
+
+### 7. Direct marketing
+
+### 8. Cross-border disclosure of personal information
+
+### 9. Adoption, use or disclosure of government related identifiers
+
+### 10. Quality of personal information
+
+### 11. Security of personal information
+
+### 12. Access to personal information
+
+### 13. Correction of personal information
+
+
+
+
+
+
+
 
 
 
@@ -852,7 +959,7 @@ The structure of a relational database is considered to be explicit and requires
 
 ### Primary Keys
 
-A primary key is an **attribute** or field that uniquely identifies **every record** in a certain table. Given this can be accomplished with a **single attribute**, you will only have ONE primary key per entity.
+- A primary key is an **attribute** or field that uniquely identifies **every record** in a certain table. Given this can be accomplished with a **single attribute**, you will only have ONE primary key per entity.
 
 ### Primary Key Rules:
 
@@ -891,19 +998,13 @@ A primary key is an **attribute** or field that uniquely identifies **every reco
 
 "Also, values in unique columns can be changed to new values as long as they don't conflict with any existing values in that column."
 
-## Relational Database
+## Relational Database: Overview
 
- "In the real world, databases are very large, having millions of rows in a single table.These commonly used databases are called relational databases."  (Teamtreehouse)
+- Relational Databases in the real world are very large and can contain millions of rows in a single table. 
 
-"This term came about from structuring databases in a way that tables are linked to each other by shared attributes. These links are the relationships between tables. Remember that relational databases are called relational because the tables are connected by common attributes."  (Teamtreehouse)
+ - The term Relational Database refers to the way the databases are structured and linked by shared attributes. These links are what's considered teh relationship between tables. 
 
-
-"Relational databases allow schema designers to enforce good data principles which lead to better data quality and better reports. This is what relational databases do, they organize data into related tables that give context and meaning to the words and numbers contained within." (Teamtreehouse)
-
-
-"There are many reasons why relational databases became the standard for application data storage. A few of which are eliminating redundant data reduces storage requirements on disk."
-
- (Teamtreehouse)
+- While there are many reasons why Relational Databases have become the standard for application data storage, one key element is their ability to reduces storage requirements on disks by eliminating redundant data.
 
 - Relational databases organise data in tables with **rows** and **columns.**
 
@@ -1276,6 +1377,19 @@ https://www.atlassian.com/agile/project-management
 https://stackshare.io/airbnb/airbnb
 
 https://medium.com/@poojaseenu1999/the-technology-stack-behind-airbnb-6b23fe425612
+
+https://www.proserveit.com/blog/information-security-best-practices
+
+https://www.techopedia.com/definition/24840/information-systems-security-infosec
+
+https://www.csoonline.com/article/3513899/what-is-information-security-definition-principles-and-jobs.html
+
+https://www.proserveit.com/blog/information-security-requirements
+
+
+
+
+
 
 
 
