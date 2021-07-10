@@ -1441,7 +1441,7 @@ This relationship with Amazon is clearly illustrated with Nathan Blecharczyk, Co
 
 ## B: Describe the hardware used to host the app.
 
-Given Airbnb operates primarily with Amazon Web Services (AWS), they have been able to sidestep a lot of the difficulties that come with managing and servicing datacenters. Therefore, investigating the hardware used to host Airbnb will require looking at the hardware of AWS. As mentioned above, Airbnb uses the Amazon EC2 to create virtual machines which manage storage, security, ports and remove the need for physical servers. The Amazon EC2 is powered by Intel® Xeon, Scalable processors which claim to have the largest breath, global reach and availability of computer instances across AWS geographies. Additionally the Amazon EC2 is the only cloud with 400Gps ethernet networking. While it is not clear exactly what version of the Intel Xeon Scalable processor Airbnb are using, considering they have a fourteen plus year relationship with Intel, it is safe to assume Airbnb will be looking to include the latest Third-Generation Intel Xeon Scalable Processor with up to 40 powerful cores and built-in workload acceleration features that include:
+Given Airbnb operates primarily with Amazon Web Services (AWS), they have been able to sidestep a lot of the difficulties that come with managing and servicing datacenters. Therefore, investigating the hardware used to host Airbnb will require looking at the hardware of AWS. As mentioned above, Airbnb uses the Amazon EC2 to create virtual machines which manage storage, security, ports and remove the need for physical servers. The Amazon EC2 is powered by Intel Xeon, Scalable processors which claim to have the largest breath, global reach and availability of computer instances across AWS geographies. Additionally the Amazon EC2 is the only cloud with 400Gps ethernet networking. While it is not clear exactly what version of the Intel Xeon Scalable processor Airbnb are using, considering they have a fourteen plus year relationship with Intel, it is safe to assume Airbnb will be looking to include the latest Third-Generation Intel Xeon Scalable Processor with up to 40 powerful cores and built-in workload acceleration features that include:
 
 - Intel Deep Learning Boost
 - Intel Advanced Vector Extensions 512
@@ -1453,7 +1453,10 @@ Given Airbnb operates primarily with Amazon Web Services (AWS), they have been a
 
 ## C: Describe the interaction of technologies within the app
 
-
+- One language that is illustrated in the above image is Rails which ex vice president of engineering at Airbnb Mike Curtis states  “Ruby on Rails is fine for our presentation layer and our API layer. […] It’s not the most scalable. It’s not the fastest. It’s not the most memory efficient. But that’s okay, we can get more machines, and they can handle that stuff”
+- In the early days of Airbnb, each page of the user's journey on Airbnb was delivered via Rails. Given the growth the company acquired in users, they redesigned their architecture to help maximize speed and fluidity.
+- This new configuration user Hypernove to server-render React whilst Redux is used for all API data; authentication state and experiment configurations.
+- Mike Curtis claims the company to use Java and Scala (which runs on a Java Virtual Machine) to run the backbone of the Airbnb service.
 
 ## D: Describe the way data is structured within the app
 
@@ -1466,14 +1469,127 @@ Given Airbnb operates primarily with Amazon Web Services (AWS), they have been a
 
 ## E: Identify entities which must be tracked by the app
 
+While Airbnb is required to track many things, I will only identify and list the entities which Airbnb must track.
 
+ Namely;
+
+- **User**
+- **Listing**
+- **Order**
+- **Payment**
+- **Booking**
+
+The primary product Airbnb sells to its **users** is accommodation. I have decided to name this entity **Listing** as a broad term with regards to this range of accommodation products. 
+
+With this **Listing**, a **User** will need to make an **Order**  and a **Payment** for that **Order**. For simplicity, I have decided to name those entities **Payment** and **Order.**
+
+Once the **Order** and **Payment** is processed, the **Host** will need to know that a **Booking** has been made on one of their **Listings**.
+
+## Further questions
+
+While I consider these the minimum entities that Airbnb must track, there are other elements that need to be included for Airbnb to have enough information regarding its products and its users. Furthermore, in order for Airbnb to be a two-sided marketplace, there needs to two kinds of users; namely a **Guest** and a **Host**.
+
+In addition to breaking down these two kinds of users, the primary product (Listing) will need to illustrate its features; pets, bedrooms etc. 
+
+## Final decided entities
+
+In order to have enough information regarding its products and its users, I have decided to include the list below as my set of final decided entities.
+
+- User
+- Guest
+- Host
+- Address
+- Booking
+- Listing
+- Feature
+- FeatureListing
+- Payment
+- Availability
+
+### Other entities which could be included:
+
+- Location
+- Reviews
+
+While these entities are relevant, I decided not to include them for this example.
 
 ## F: Identify the relationships and associations between the entities you have identified in part (e)
 
+In order to help minimise redundancy from a relation or set of relations, I used the process of Normalisation to ensure there were no multi-valued attributes within a given entity.  This means each entity adheres to the first normal form.
 
+## User - Guest
 
+The relationship between **User** and **Guest** is a one to one relationship.
+
+This is because if a **User** is logged in as a **Guest**, they can only be associated as a single **Guest** and not many.
+
+## User - Host
+
+The relationship between **User** and **Host** is a one to one relationship.
+
+Similarly, if a **User** is logged in as a **Host**, they can only be associated as a single **Host** and not many.
+
+## Guest - Address
+
+The relationship between **Guest** and **Address** is a one to one relationship.
+
+A **Guest** can only have one address associated with them and not many.
+
+## Host - Address
+
+The relationship between **Host** and **Address** is a one to one relationship.
+
+Similarly, a **Host** can only have one address associated with them and not many.
+
+## Guest - Order
+
+The relationship between **Guest** and **Order** is a one to many relationship.
+
+A **Guest** can place many **Orders** while an **Order** can only be associated with one **Guest**.
+
+## Host - Listing
+
+The relationship between **Host** and **Listing** is a one to many relationship.
+
+This is because a **Host** can have many **Listings** while a **Listing** can only be associated with a single **Host**.
+
+## Listing - Order
+
+The relationship between **Listing** and **Order** is a one to many relationship.
+
+ A Listing may have many orders associated with it but an **Order** can only be associated with one **Listing.**
+
+ ## Order - Payment
+
+The relationship between **Order** and **Payment** is a one to one relationship.
+
+A **Payment** will refer to a single **Order** while an **Order** will be placed via one **Payment.**
+
+## Payment - Booking
+
+The relationship between **Payment** and **Booking** is a one to one relationship.
+
+A **Booking** will refer to a single **Payment** while a **Payment** is associated with one **Booking.**
+
+## Host - Booking
+
+The relationship between **Host** and **Booking** is a one to many relationship. 
+
+A **Booking** will be associated with one **Host** while a **Host** may have many **Bookings.**
+
+## Listing - FeatureListing
+
+Given that a **Listing** can have many features and these features can refer to many listings, I created a join table to remove this many to many relationship. This join table is named **Feature**. 
+
+Now there is a one to many relationship between **Feature** and **Listing** as well as a one to many relationship between **Feature** and **FeatureListing.**
 
 ## ERD 
+
+The image below illustrates my ERD design for Airbnb.
+
+To view the ERD online click [here](https://dbdiagram.io/d/60e8f60e7e498c3bb3f03168)
+
+![Alt](airbnberd.png)
 
 
 # References:
