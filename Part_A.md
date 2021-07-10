@@ -789,7 +789,7 @@ Additionally, I have sourced *The Privacy Act 1988* which
 was introduced to promote and protect the privacy of individuals and to regulate how Australian Government agencies and organisations handle personal information. The document outlines the organisations and agencies the Privacy Act covers and those it doesn’t.
 
 
-- The document can be viewed [here]().
+- The document can be viewed [here](https://github.com/IsaacCavallaro/IsaacCavallaro_T2_A1-A/blob/main/C2021C00242.pdf).
 
 Lastly, a quick reference to the Australian Privacy Principles which also includes the relevant information for applying the principles. This source can be found [here](https://www.oaic.gov.au/privacy/australian-privacy-principles/australian-privacy-principles-quick-reference/).
 
