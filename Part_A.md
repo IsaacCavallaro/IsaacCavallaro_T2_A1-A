@@ -167,10 +167,6 @@ So it displays the information to the user and also gives the user ways to inter
 
 ### *The View usually though not always take the form of HTML templates with Ruby expressions embedded in them. Those expressions refer to data loaded from the model to populate an HTML page with data* - (Teamtreehouse, 2021).
 
-
-ADD EXAMPLE
-
-
 ## Partials
 
 
@@ -380,7 +376,7 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
 
     1. **Scrum master:**
 
-        - Facilitaes the scrum development process.
+        - Facilitates the scrum development process.
 
         - Supervises and manages that the scrum rules are being enforced and applied as intended.
 
@@ -570,29 +566,27 @@ Furthermore, we can see that Agile focuses on critical documentation (such as pr
         git branch
 
 
-- The git branch command lets you create, list, rename, and delete branches. 
+- The git branch command lets you create, list, rename, and delete branches. However, it does not let you switch between branches or put a forked history back together again. In this manner, git branch is tightly integrated with the git checkout and git merge commands.
 
-- "It doesn’t let you switch between branches or put a forked history back together again. For this reason, git branch is tightly integrated with the git checkout and git merge commands." (https://www.atlassian.com/git/tutorials/using-branches)
-
-
-"Branches are just pointers to commits. When you create a branch, all Git needs to do is create a new pointer, it doesn’t change the repository in any other way." (https://www.atlassian.com/git/tutorials/using-branches)
+- One way to think of a Branch is that they are just pointers to commits. Therefore, when you create a brach, Git just needs to create a new "pointer". In this manner, the 
+repository is not altered in any other way.
 
 
 ## Checkout 
 
-"Git checkout works hand-in-hand with git branch. The git branch command can be used to create a new branch. When you want to start a new feature, you create a new branch off main using git branch new_branch. Once created you can then use git checkout new_branch to switch to that branch. Additionally, The git checkout command accepts a -b argument that acts as a convenience method which will create the new branch and immediately switch to it. You can work on multiple features in a single repository by switching between them with git checkout." (https://www.atlassian.com/git/tutorials/using-branches)
+- Git checkout works directly with git branch. In short, you use git checkout #new_branch_name to switch to that branch. Therefore, you can work on multiple features within a single repository by switching between branches using the git checkout command. Additionally, git checkout accepts a -b argument which will act as a method to both create a new brnach and switch to that branch..
+
 
         git checkout -b ＜new-branch＞
 
 
-"When collaborating with a team it is common to utilize remote repositories. These repositories may be hosted and shared or they may be another colleague's local copy. Each remote repository will contain its own set of branches. In order to checkout a remote branch you have to first fetch the contents of the branch." (https://www.atlassian.com/git/tutorials/using-branches)
+- Another command commonly used in collaborating with a team is git fetch which alows team members to collect a remote repository from another colleague's local copy. In this way a team member can fetch a remote repository which may contain its own set of branches. 
 
 
         git fetch --all
 
 
-
-In modern versions of Git, you can then checkout the remote branch like a local branch. (https://www.atlassian.com/git/tutorials/using-branches)
+- The modern version of Git allow user to checkout the remote branch of a local branch using the command below:
 
 
         git checkout ＜remotebranch＞
@@ -1028,10 +1022,7 @@ The structure of a relational database is considered to be explicit and requires
 
 - Multiple unique keys can exist per table.
 
-- "For example, a unique email address column could also be in the same table as a unique Social Security number column."
 
-
-"Also, values in unique columns can be changed to new values as long as they don't conflict with any existing values in that column."
 
 ## Relational Database: Overview
 
@@ -1301,7 +1292,7 @@ These constraints and rules are used to define the data format and/or restrict t
 # Q11: Describe the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
 
 
-*The manipulative features of relational databases provide the ways we access and modify the data*
+*The manipulative features of relational databases provide the ways we access and modify the data*.
 
 ## Manipulating Data
 
@@ -1387,7 +1378,7 @@ It is important to illustrate that Airbnb's architecture has differed throughout
     - Presto
     - Druid
 
-This relationship with Amazon is clearly illustrated with Nathan Blecharczyk, Co-founder & CTO of Airbnb claims stating,
+This relationship with Amazon is clearly illustrated with Nathan Blecharczyk, Co-founder & CTO of Airbnb claiming,
 
 “Initially, the appeal of AWS was the ease of managing and customizing the stack. It was great to be able to ramp up more servers without having to contact anyone and without having minimum usage commitments. As our company continued to grow, so did our reliance on the AWS cloud and now, we’ve adopted almost all of the features AWS provides. AWS is the easy answer for any Internet business that wants to scale to the next level.”
 
@@ -1519,69 +1510,69 @@ In order to help minimise redundancy from a relation or set of relations, I used
 
 ## User - Guest
 
-The relationship between **User** and **Guest** is a one to one relationship.
+- The relationship between **User** and **Guest** is a one to one relationship.
 
-This is because if a **User** is logged in as a **Guest**, they can only be associated as a single **Guest** and not many.
+- This is because if a **User** is logged in as a **Guest**, they can only be associated as a single **Guest** and not many.
 
 ## User - Host
 
-The relationship between **User** and **Host** is a one to one relationship.
+- The relationship between **User** and **Host** is a one to one relationship.
 
-Similarly, if a **User** is logged in as a **Host**, they can only be associated as a single **Host** and not many.
+- Similarly, if a **User** is logged in as a **Host**, they can only be associated as a single **Host** and not many.
 
 ## Guest - Address
 
-The relationship between **Guest** and **Address** is a one to one relationship.
+- The relationship between **Guest** and **Address** is a one to one relationship.
 
-A **Guest** can only have one address associated with them and not many.
+- A **Guest** can only have one address associated with them and not many.
 
 ## Host - Address
 
-The relationship between **Host** and **Address** is a one to one relationship.
+- The relationship between **Host** and **Address** is a one to one relationship.
 
-Similarly, a **Host** can only have one address associated with them and not many.
+- Similarly, a **Host** can only have one address associated with them and not many.
 
 ## Guest - Order
 
-The relationship between **Guest** and **Order** is a one to many relationship.
+- The relationship between **Guest** and **Order** is a one to many relationship.
 
-A **Guest** can place many **Orders** while an **Order** can only be associated with one **Guest**.
+- A **Guest** can place many **Orders** while an **Order** can only be associated with one **Guest**.
 
 ## Host - Listing
 
-The relationship between **Host** and **Listing** is a one to many relationship.
+- The relationship between **Host** and **Listing** is a one to many relationship.
 
-This is because a **Host** can have many **Listings** while a **Listing** can only be associated with a single **Host**.
+- This is because a **Host** can have many **Listings** while a **Listing** can only be associated with a single **Host**.
 
 ## Listing - Order
 
-The relationship between **Listing** and **Order** is a one to many relationship.
+- The relationship between **Listing** and **Order** is a one to many relationship.
 
- A Listing may have many orders associated with it but an **Order** can only be associated with one **Listing.**
+ - A Listing may have many orders associated with it but an **Order** can only be associated with one **Listing.**
 
  ## Order - Payment
 
-The relationship between **Order** and **Payment** is a one to one relationship.
+- The relationship between **Order** and **Payment** is a one to one relationship.
 
-A **Payment** will refer to a single **Order** while an **Order** will be placed via one **Payment.**
+- A **Payment** will refer to a single **Order** while an **Order** will be placed via one **Payment.**
 
 ## Payment - Booking
 
-The relationship between **Payment** and **Booking** is a one to one relationship.
+- The relationship between **Payment** and **Booking** is a one to one relationship.
 
-A **Booking** will refer to a single **Payment** while a **Payment** is associated with one **Booking.**
+- A **Booking** will refer to a single **Payment** while a **Payment** is associated with one **Booking.**
 
 ## Host - Booking
 
-The relationship between **Host** and **Booking** is a one to many relationship. 
+- The relationship between **Host** and **Booking** is a one to many relationship. 
 
-A **Booking** will be associated with one **Host** while a **Host** may have many **Bookings.**
+- A **Booking** will be associated with one **Host** while a **Host** may have many **Bookings.**
 
 ## Listing - FeatureListing
 
-Given that a **Listing** can have many features and these features can refer to many listings, I created a join table to remove this many to many relationship. This join table is named **Feature**. 
+- Given that a **Listing** can have many features and these features can refer to many listings, I created a join table to remove this many to many relationship. This join table is named **Feature**. 
 
-Now there is a one to many relationship between **Feature** and **Listing** as well as a one to many relationship between **Feature** and **FeatureListing.**
+- Now there is a one to many relationship between **Feature** and **Listing** as well as a one to many relationship between **Feature** and **FeatureListing.**
 
 ## ERD 
 
