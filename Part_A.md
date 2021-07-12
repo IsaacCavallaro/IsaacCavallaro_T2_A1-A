@@ -640,9 +640,40 @@ Unit tests are referred to as automated tests; meaning developers write tests th
   - Manual testing
   - Automated testing
 
+## Example of rspec code:
 
-ADD RSPEC CODE!
+        # spec/string_calculator_spec.rb
+        describe StringCalculator do
 
+        describe ".add" do
+            context "given an empty string" do
+            it "returns zero" do
+                expect(StringCalculator.add("")).to eq(0)
+            end
+            end
+        end
+        end
+
+
+- The above code is testing a calculator titled StringCalculator
+
+        # lib/string_calculator.rb
+        class StringCalculator
+        end
+
+- In this case the test would fail as we have no yet defined a method to perform the calculation we are testing.
+
+- The aim is make the test pass by refactoring with the simplest code. 
+
+- The code below illustrates this:
+
+        # lib/string_calculator.rb
+        class StringCalculator
+
+        def self.add(input)
+            0
+        end
+        end
 
 
 # Q6: Discuss and analyse requirements related to information system security and how they relate to the project
@@ -1451,9 +1482,25 @@ Given Airbnb operates primarily with Amazon Web Services (AWS), they have been a
 
 ## D: Describe the way data is structured within the app
 
+Initially, Airbnb used MySQL as their main datastore before migrating to Amazons RDS (Relational Database Service). A link to the script used for this migration can be found here 
 
+[https://gist.github.com/guenter/671874](https://gist.github.com/guenter/671874)
 
-![Alt](airbnbdatatier.png)
+Incredibly, this entire database migration to Amazon RDS was completed with only 15 minutes of downtime. Before switching to RDS, Airbnb ran on a single MySQL instance on top of Amazon EC2. By making the switch to Amazon RD, many of the time heavy administrative tasks generally associated with databases can be simplified. Thanks to RDS, other difficult procedures including replication and scaling are now available through an API call or via the AWS Management Console. To further automate their database replication and augment data durability, Airbnb uses Multi-Availability Zone (Multi-AZ) deployments.
+
+The Amazon RDS which Airbnb uses is a managed relational database service from which users can select from six familiar database engines; including MySQL which Airbnb migrated to RDS from. In this way, Airbnb could continue using the same code, applications and tools from the time where they ran on a single MySQL instance (on top of Amazon EC2).
+
+By structuring their data with the Amazon RDS, Airbnb can take advantage of the user-initiated backups instances stored in Amazon S3; referred to as database snapshots. These snapshots are kept until explicitly deleted. Furthermore, by using the cloud function of Amazon RDS, Airbnb can independently scale elements (CPU, memory, storage) that are generally bundled together with typical servers. 
+
+To understand the Amazon RDS we need to understand the DB instance which is an isolated database environment within the AWS cloud. The DB instance can contain multiple user-created databases which can be accessed with same tools and applications that Airbnb used with MySQL. Modifying DB instances can be achieved with the AWS Command Line Interface, the Amazon RDS API, or the AWS Management Console.
+
+For more information on Known issues and limitations for Amazon RDS for MySQL click [here.](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.KnownIssuesAndLimitations.html)
+
+For in-memory data storage, Airbnb uses Redis which helps to reduce latency and provide Airbnb with rapid responses regarding, search, images, payments, and more. Airbnb migrated from EC2 classic to a fully-managed Amazon ElastiCache where all their Redis is an AWS managed service. This includes multi-Availability Zone support, automatic failover, and maintenance.
+
+Below is an image of Amazon ElastiCache for Redis as a session store. This may indicate one way that Airbnb used Amazon ElastiCache for Redis.
+
+![Alt](sessionstore.png)
 
 
 
